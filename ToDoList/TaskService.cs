@@ -24,6 +24,18 @@ namespace ToDoList
                 Console.Write("Enter task title: ");
                 string title = Console.ReadLine();
 
+                Console.Write("Enter task priroty: ");
+                string pri = Console.ReadLine();
+
+                if(!string.IsNullOrEmpty(pri) && (pri.ToLower() == "high" || pri.ToLower() == "mid" || pri.ToLower() == "low"))
+                {
+
+                }
+                else
+                {
+                    continue;
+                }
+
                 if (string.IsNullOrWhiteSpace(title))
                 {
                     Console.WriteLine(Configuration.ENTER_VALID_INPUT);
@@ -35,7 +47,8 @@ namespace ToDoList
                 Task newTask = new Task
                 {
                     Title = title,
-                    IsCompleted = false
+                    IsCompleted = false,
+                    priroty = pri
                 };
 
                 _repo.AddTask(newTask);

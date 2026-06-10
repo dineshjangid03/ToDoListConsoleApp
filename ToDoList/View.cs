@@ -81,7 +81,7 @@ namespace ToDoList
                 Console.WriteLine();
                 Console.WriteLine("█▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█");
                 Thread.Sleep(30);
-                Console.WriteLine($"{"  SR  ",-1}{"TITLE",-40}{"STATUS",10}");
+                Console.WriteLine($"{"  SR  ",-1}{"PRIROTY", -5}{"TITLE",-35}{"STATUS",10}");
                 Thread.Sleep(30);
                 Console.WriteLine("█════════════════════════════════════════════════════════════█");
 
@@ -91,7 +91,7 @@ namespace ToDoList
                     string colorCode = tasks[i].IsCompleted ? Configuration.GREEN_BOLD : Configuration.RED_BOLD;
                     string status = colorCode + plainStatus.PadRight(10) + Configuration.ANSI_RESET;
 
-                    Console.WriteLine($"  {i + 1,-3} {tasks[i].Title,-40} {status}");
+                    Console.WriteLine($"  {i + 1,-3} {tasks[i].priroty, -5} {tasks[i].Title,-35} {status}");
 
                     if (i == tasks.Count - 1)
                     {

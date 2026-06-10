@@ -1,10 +1,27 @@
 [
   {
     "Title": "schedule meeting with lead",
-    "IsCompleted": false
+    "IsCompleted": false,
+    "priroty": null
   },
   {
     "Title": "preparation for interview",
-    "IsCompleted": true
+    "IsCompleted": true,
+    "priroty": null
+  },
+  {
+    "Title": "To dat task",
+    "IsCompleted": false,
+    "priroty": null
+  },
+  {
+    "Title": "test",
+    "IsCompleted": false,
+    "priroty": "high"
+  },
+  {
+    "Title": "Dhrumil",
+    "IsCompleted": false,
+    "priroty": "mid"
   }
 ]
